@@ -17,8 +17,9 @@ client.on('message', async message => {
         let args = message.content.toLowerCase().split(/ +/);
         switch (args[0]) {
             case '/c':
-                var type = args[1];
-            message.channel.send(cennik.cennik.type);
+                if (args[1] == 'meta') { 
+            message.channel.send(cennik.cennik.meta);
+                }
             break;
         }
 });
