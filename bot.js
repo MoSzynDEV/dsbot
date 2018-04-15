@@ -25,7 +25,7 @@ client.on('message', async message => {
                 message.channel.send('Cena **hery** to **'+cennik.cennik.hera+'$**');
                 } else if (args[1] == 'amfa') {
                 message.channel.send('Cena **amfy** to **'+cennik.cennik.amfa+'$**');
-                }
+                } else { message.channel.send('Takie narkotyki nie istniejom baranie'); }
             break;
         }
 });
