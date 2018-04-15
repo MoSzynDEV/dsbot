@@ -19,7 +19,7 @@ client.on('message', async message => {
             case '/c':
                 if (args[1] == 'meta') {
                 message.channel.send('Cena **mety** to **'+cennik.cennik.meta+'**');
-                }elseif (args[1] == 'koka') {
+                } else if (args[1] == 'koka') {
                 message.channel.send('Cena **mety** to **'+cennik.cennik.koka+'**');
                 }
             break;
