@@ -17,10 +17,10 @@ client.on('message', async message => {
         let args = message.content.toLowerCase().split(/ +/);
         switch (args[0]) {
             case '/c':
-                for (i in cennik.cennik) {
-                if (args[1] == i) {
-            message.channel.send(`Cena ${args[1]} to ${cennik.cennik.i}`);
-                }
+                if (args[1] == 'meta') {
+                message.channel.send('Cena **mety** to **'+cennik.cennik.meta+'**');
+                }elseif (args[1] == 'koka') {
+                message.channel.send('Cena **mety** to **'+cennik.cennik.koka+'**');
                 }
             break;
         }
