@@ -18,14 +18,14 @@ client.on('message', async message => {
         switch (args[0]) {
             case '/c':
                 if (args[1] == 'meta') {
-                message.channel.send('Cena **mety** to **'+cennik.cennik.meta+'$**');
+                message.channel.send('✔️ Cena **mety** to **$'+cennik.cennik.meta+'**');
                 } else if (args[1] == 'koka') {
-                message.channel.send('Cena **koki** to **'+cennik.cennik.koka+'$**');
+                message.channel.send('✔️ Cena **koki** to **$'+cennik.cennik.koka+'**');
                 } else if (args[1] == 'hera') {
-                message.channel.send('Cena **hery** to **'+cennik.cennik.hera+'$**');
+                message.channel.send('✔️ Cena **hery** to **$'+cennik.cennik.hera+'**');
                 } else if (args[1] == 'amfa') {
-                message.channel.send('Cena **amfy** to **'+cennik.cennik.amfa+'$**');
-                } else { message.channel.send('Takie narkotyki nie istniejom baranie'); }
+                message.channel.send('✔️ Cena **amfy** to **$'+cennik.cennik.amfa+'**');
+                } else { message.channel.send('❌ Takie narkotyki nie istniejom baranie.'); }
             break;
         }
 });
