@@ -19,7 +19,7 @@ client.on('message', async message => {
             case '/c':
                 for (i in cennik.cennik) {
                 if (args[1] == i) {
-            message.channel.send(i);
+            message.channel.send('Cena '. args[1] .'to '.i);
                 }
                 }
             break;
