@@ -21,10 +21,8 @@ client.on('message', async message => {
                 message.channel.send('Cena **mety** to **'+cennik.cennik.meta+'**');
                 } else if (args[1] == 'koka') {
                 message.channel.send('Cena **koki** to **'+cennik.cennik.koka+'**');
-                }
                 } else if (args[1] == 'hera') {
                 message.channel.send('Cena **hery** to **'+cennik.cennik.hera+'**');
-                }
                 } else if (args[1] == 'amfa') {
                 message.channel.send('Cena **amfy** to **'+cennik.cennik.amfa+'**');
                 }
