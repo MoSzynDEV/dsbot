@@ -8,7 +8,7 @@ client.on('ready', () => {
     console.log(' PLEBS BUILD 1.0 ')
     client.user.setUsername("PIRAT");
     client.user.setStatus('dnd');
-    client.user.setActivity('szanty pirackie.', {type: 'LISTENING'});
+    client.user.setActivity('szanty pirackie', {type: 'LISTENING'});
 });
 
 
