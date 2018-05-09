@@ -41,18 +41,7 @@ let accept = {};
                 }
               ]
             }
-          });
-          const emojiWporzo = message.guild.emojis.find('name', 'wporzo');
-          const logi = client.channels.find("id", '433669387677990928')
-          logi.send(`@here Dołączył do nas <@${message.author.id}>`);
-
-        } catch (e) {
-            message.channel.send("Gotowe!");
-        } finally {
-			message.delete();
-            message.channel.stopTyping(true);
-        }
-    
+          });    
     }
 
 module.exports = accept;
