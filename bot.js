@@ -6,7 +6,7 @@ const cennik = require("./cennik.js");
 
 
 client.on('ready', () => {
-    console.log(' ZŁOM BUILD 1.0 ')
+    console.log(' ZŁOM BUILD 0.1 ')
     client.user.setUsername("Stanisław");
     client.user.setStatus('dnd');
     client.user.setActivity('się mądrych ludzi', {type: 'LISTENING'});
