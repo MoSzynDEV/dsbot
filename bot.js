@@ -20,7 +20,7 @@ client.on('guildMemberAdd', member => {
 
 client.on('message', async message => {
 
-        let args = message.content.toLowerCase().split(/ +/);
+        let args = message.content.split(/ +/);
         switch (args[0]) {
                  case '/cena':
       if(message.channel.id == 443788782395981835)
