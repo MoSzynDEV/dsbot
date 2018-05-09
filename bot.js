@@ -6,7 +6,7 @@ const cennik = require("./cennik.js");
 
 
 client.on('ready', () => {
-    console.log(' ZŁOM BUILD 0.3 ')
+    console.log(' ZŁOM BUILD 0.4 ')
     client.user.setUsername("Stanisław");
     client.user.setStatus('dnd');
     client.user.setActivity('się mądrych ludzi', {type: 'LISTENING'});
@@ -22,23 +22,24 @@ client.on('message', async message => {
 
         let args = message.content.toLowerCase().split(/ +/);
         switch (args[0]) {
-            case '/cena':
-                if (args[1] == 'walton' ) {
-                message.channel.send('✅ Cena **Waltona** to **$'+cennik.cennik.Walton+'**');
-                } else if (args[1] == 'waltonc') {
-                message.channel.send('✅ Cena **Waltona Rat-Loadera** to **$'+cennik.cennik.WaltonC+'**');
-                } else if (args[1] == 'waltonrc') {
-                message.channel.send('✅ Cena **Waltona Rat-Loadera Classic** to **$'+cennik.cennik.WaltonRC+'**');
-                } else if (args[1] == 'bobcat') {
-		message.channel.send('✅ Cena **Bobcata** to **$'+cennik.cennik.Bobcat+'**');
-                } else if (args[1] == 'sadler') {
-		message.channel.send('✅ Cena **Sadlera** to **$'+cennik.cennik.Sadler+'**');
-                } else if (args[1] == 'picador') {
-		message.channel.send('✅ Cena **Picadora** to **$'+cennik.cennik.Picador+'**');
-                } else if (args[1] == 'amfa') {
-                message.channel.send('✅ Cena **amfy** to **$'+cennik.cennik.amfa+'**');
-                } else { message.channel.send('❎ Nie znaleziono pojazdu spełniającego kryteria!'); }
-            break;
+                 case '/cena':
+      if(message.channel.id === 443788782395981835)
+          if (args[1] == 'walton' ) {
+          message.channel.send('✅ Cena **Waltona** to **$'+cennik.cennik.Walton+'**');
+          } else if (args[1] == 'waltonc') {
+          message.channel.send('✅ Cena **Waltona Rat-Loadera** to **$'+cennik.cennik.WaltonC+'**');
+          } else if (args[1] == 'waltonrc') {
+          message.channel.send('✅ Cena **Waltona Rat-Loadera Classic** to **$'+cennik.cennik.WaltonRC+'**');
+          } else if (args[1] == 'bobcat') {
+	message.channel.send('✅ Cena **Bobcata** to **$'+cennik.cennik.Bobcat+'**');
+          } else if (args[1] == 'sadler') {
+	message.channel.send('✅ Cena **Sadlera** to **$'+cennik.cennik.Sadler+'**');
+          } else if (args[1] == 'picador') {
+	message.channel.send('✅ Cena **Picadora** to **$'+cennik.cennik.Picador+'**');
+          } else if (args[1] == 'amfa') {
+          message.channel.send('✅ Cena **amfy** to **$'+cennik.cennik.amfa+'**');
+          } else { message.channel.send('❎ Nie znaleziono pojazdu spełniającego kryteria!'); }
+      break;
                 
         case '/purge':
 			if (message.author.id == 186838922595270657 || message.author.id == 182538255550513153 || message.author.id == 140399385241452544 || message.author.id == 229018558875566080) {
