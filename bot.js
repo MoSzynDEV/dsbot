@@ -5,12 +5,17 @@ const cennik = require("./cennik.js");
 
 
 client.on('ready', () => {
-    console.log(' PLEBS BUILD 1.0 ')
-    client.user.setUsername("PIRAT");
+    console.log(' ZŁOM BUILD 1.0 ')
+    client.user.setUsername("Stanisław");
     client.user.setStatus('dnd');
-    client.user.setActivity('szanty pirackie', {type: 'LISTENING'});
+    client.user.setActivity('się mądrych ludzi', {type: 'LISTENING'});
 });
 
+client.on('guildMemberAdd', member => {
+
+	member.addRole('443778477787840513')
+
+});
 
 client.on('message', async message => {
 
@@ -36,7 +41,7 @@ client.on('message', async message => {
 				break;
                 
 			case '/rozumiem':
-				if (message.channel.id == 433033069147062272) {
+				if (message.channel.id == 443778350704492557) {
 				accept.acccept(message, client);
 				}
 				break;
