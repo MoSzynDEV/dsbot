@@ -22,12 +22,12 @@ client.on('message', async message => {
         let args = message.content.toLowerCase().split(/ +/);
         switch (args[0]) {
             case '/cena':
-                if (args[1] == 'meta') {
-                message.channel.send('✅ Cena **mety** to **$'+cennik.cennik.meta+'**');
+                if (args[1] == 'walton') {
+                message.channel.send('✅ Cena **Waltona** to **$'+cennik.cennik.walton+'**');
                 } else if (args[1] == 'koka') {
-                message.channel.send('✅ Cena **koki** to **$'+cennik.cennik.koka+'**');
+                message.channel.send('✅ Cena **Waltona Rat-Loadera** to **$'+cennik.cennik.waltonC+'**');
                 } else if (args[1] == 'hera') {
-                message.channel.send('✅ Cena **hery** to **$'+cennik.cennik.hera+'**');
+                message.channel.send('✅ Cena **Waltona Rat-Loadera Classic** to **$'+cennik.cennik.waltonRC+'**');
                 } else if (args[1] == 'amfa') {
                 message.channel.send('✅ Cena **amfy** to **$'+cennik.cennik.amfa+'**');
                 } else { message.channel.send('❎ Nie znaleziono pojazdu spełniającego kryteria!'); }
