@@ -40,7 +40,16 @@ client.on('message', async message => {
           message.channel.send('✅ Cena **amfy** to **$'+cennik.cennik.amfa+'**');
           } else { message.channel.send('❎ Nie znaleziono pojazdu spełniającego kryteria!'); }
       break;
-                
+			
+      case '/nickname':
+          if (args[1] !== 'undefined' ) {
+            console.log(message.author.username + args[0] + " " + args[1] + " " + args[2])
+            message.member.setNickname(message.author.username + ' ' + '(' + args[1] + ' ' + args[1] + ')')
+            .then(console.log)
+            .catch(console.error);
+            break;
+          }
+			
         case '/purge':
 			if (message.author.id == 186838922595270657 || message.author.id == 182538255550513153 || message.author.id == 140399385241452544 || message.author.id == 229018558875566080) {
 				let messagecount = parseInt(args[1]);
