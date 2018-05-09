@@ -23,7 +23,6 @@ client.on('message', async message => {
         switch (args[0]) {
             case '/cena':
                 if (args[1] == 'walton' ) {
-		message.channel.id == ) 443788782395981835}
                 message.channel.send('✅ Cena **Waltona** to **$'+cennik.cennik.Walton+'**');
                 } else if (args[1] == 'waltonc') {
                 message.channel.send('✅ Cena **Waltona Rat-Loadera** to **$'+cennik.cennik.WaltonC+'**');
