@@ -42,5 +42,12 @@ let accept = {};
               ]
             }
           })
+   } catch (e) {
+                  message.channel.send("Gotowe!");
+              } finally {
+		  message.delete();
+                  message.channel.stopTyping(true);
+              }
+	  }
 		
 module.exports = accept;
