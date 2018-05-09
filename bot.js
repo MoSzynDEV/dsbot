@@ -23,10 +23,10 @@ client.on('message', async message => {
         switch (args[0]) {
             case '/cena':
                 if (args[1] == 'walton') {
-                message.channel.send('✅ Cena **Waltona** to **$'+cennik.cennik.walton+'**');
-                } else if (args[1] == 'koka') {
-                message.channel.send('✅ Cena **Waltona Rat-Loadera** to **$'+cennik.cennik.waltonC+'**');
-                } else if (args[1] == 'hera') {
+                message.channel.send('✅ Cena **Waltona** to **$'+cennik.cennik.Walton+'**');
+                } else if (args[1] == 'waltonc') {
+                message.channel.send('✅ Cena **Waltona Rat-Loadera** to **$'+cennik.cennik.WaltonC+'**');
+                } else if (args[1] == 'waltonrc') {
                 message.channel.send('✅ Cena **Waltona Rat-Loadera Classic** to **$'+cennik.cennik.waltonRC+'**');
                 } else if (args[1] == 'amfa') {
                 message.channel.send('✅ Cena **amfy** to **$'+cennik.cennik.amfa+'**');
