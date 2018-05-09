@@ -41,7 +41,6 @@ let accept = {};
                 }
               ]
             }
-          });    
-    }
-
+          })
+		
 module.exports = accept;
