@@ -16,7 +16,7 @@ let accept = {};
               },
               "fields": [
                 {
-                  "name": "**Sprawy organizacyjne"**,
+                  "name": "**Sprawy organizacyjne**",
                   "value": "Za każdy sprzedany pojazd dostajecie 50% z marży z czego 20% idzie do waszego szefa IC a 30% zarobku do Was, jeśli sprzedajecie np. Sabre z marżą $8.000 to (30%) $2.400 wędruje do Was a (20%)$1.600 do kapitana. Za każdy spędzony czas na duty dostajecie $100 dniówki pod warunkiem że spędzicie na złomowisku minimum 30 minut służby. Wypłaty będą przyznawane w niedziele, każdy kapitan będzie miał swoich ludzi pod sobą i to on dostaje pieniądze na wypłaty i rozlicza Was z tego co zarobiliście. Co tydzień kapitan ma obowiązek rozliczyć wszystkich swoich pracowników i podać kwote jaką zarobiła jego ekipa. Obowiązkowo codziennie musi sprawdzać w grupie kto ile wbił duty i jeśli był na służbie 30 minut to zapisuje sobie dany dzień w notatniku."
                 },
                 {
