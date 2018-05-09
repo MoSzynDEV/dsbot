@@ -6,7 +6,7 @@ const cennik = require("./cennik.js");
 
 
 client.on('ready', () => {
-    console.log(' ZŁOM BUILD 0.4 ')
+    console.log(' ZŁOM BUILD 0.5 ')
     client.user.setUsername("Stanisław");
     client.user.setStatus('dnd');
     client.user.setActivity('się mądrych ludzi', {type: 'LISTENING'});
@@ -23,7 +23,7 @@ client.on('message', async message => {
         let args = message.content.toLowerCase().split(/ +/);
         switch (args[0]) {
                  case '/cena':
-      if(message.channel.id === 443788782395981835)
+      if(message.channel.id == 443788782395981835)
           if (args[1] == 'walton' ) {
           message.channel.send('✅ Cena **Waltona** to **$'+cennik.cennik.Walton+'**');
           } else if (args[1] == 'waltonc') {
