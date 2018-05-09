@@ -1,6 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const prefix = "/";
+const accept = require('./accept.js')
 const cennik = require("./cennik.js");
 
 
