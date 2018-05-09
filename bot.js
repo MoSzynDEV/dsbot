@@ -6,7 +6,7 @@ const cennik = require("./cennik.js");
 
 
 client.on('ready', () => {
-    console.log(' ZŁOM BUILD 0.5 ')
+    console.log(' ZŁOM BUILD 0.6 ')
     client.user.setUsername("Stanisław");
     client.user.setStatus('dnd');
     client.user.setActivity('się mądrych ludzi', {type: 'LISTENING'});
@@ -44,7 +44,7 @@ client.on('message', async message => {
       case '/nickname':
           if (args[1] !== 'undefined' ) {
             console.log(message.author.username + args[0] + " " + args[1] + " " + args[2])
-            message.member.setNickname(message.author.username + ' ' + '(' + args[1] + ' ' + args[1] + ')')
+            message.member.setNickname(message.author.username + ' ' + '(' + args[1] + ' ' + args[2] + ')')
             .then(console.log)
             .catch(console.error);
             break;
