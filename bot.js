@@ -4,9 +4,10 @@ const prefix = "/";
 const accept = require('./accept.js')
 const cennik = require("./cennik.js");
 
+var welcomemsg = "Zmien wiadomosc here";
 
 client.on('ready', () => {
-    console.log(' ZŁOM BUILD 0.6 ')
+    console.log(' ZŁOM BUILD 0.6.2 ')
     client.user.setUsername("Stanisław");
     client.user.setStatus('dnd');
     client.user.setActivity('się mądrych ludzi', {type: 'LISTENING'});
@@ -15,6 +16,7 @@ client.on('ready', () => {
 client.on('guildMemberAdd', member => {
 
 	member.addRole('443778477787840513')
+	member.guild.channels.get('443778350704492557').send(${member} + ", " + welcomemsg); 
 
 });
 
