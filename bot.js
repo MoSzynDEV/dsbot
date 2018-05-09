@@ -28,6 +28,12 @@ client.on('message', async message => {
                 message.channel.send('✅ Cena **Waltona Rat-Loadera** to **$'+cennik.cennik.WaltonC+'**');
                 } else if (args[1] == 'waltonrc') {
                 message.channel.send('✅ Cena **Waltona Rat-Loadera Classic** to **$'+cennik.cennik.WaltonRC+'**');
+                } else if (args[1] == 'bobcat') {
+		message.channel.send('✅ Cena **Bobcata** to **$'+cennik.cennik.Bobcat+'**');
+                } else if (args[1] == 'amfa') {
+		message.channel.send('✅ Cena **Sadlera** to **$'+cennik.cennik.Sadler+'**');
+                } else if (args[1] == 'amfa') {
+		message.channel.send('✅ Cena **Picadora** to **$'+cennik.cennik.Picador+'**');
                 } else if (args[1] == 'amfa') {
                 message.channel.send('✅ Cena **amfy** to **$'+cennik.cennik.amfa+'**');
                 } else { message.channel.send('❎ Nie znaleziono pojazdu spełniającego kryteria!'); }
