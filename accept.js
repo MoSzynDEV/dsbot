@@ -6,7 +6,8 @@ let accept = {};
     accept.acccept = (message, client) => {
 	try {
         message.member.removeRole('443778477787840513');
-
+        message.member.addRole('328513641970139136');
+		
         message.author.send({
             "embed": {
               "title": "POWITALNA",
