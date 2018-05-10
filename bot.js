@@ -7,7 +7,7 @@ const cennik = require('./cennik.js');
 var welcomemsg = "Zmien wiadomosc here";
 
 client.on('ready', () => {
-    console.log(' ZŁOM BUILD 0.6.3 ')
+    console.log(' ZŁOM BUILD 0.6.4 ')
     client.user.setUsername("Stanisław");
     client.user.setStatus('dnd');
     client.user.setAvatar('https://i.imgur.com/0KJfEZy.png');
