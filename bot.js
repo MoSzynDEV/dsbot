@@ -27,7 +27,7 @@ client.on('message', async message => {
         let args = message.content.split(/ +/);
         switch (args[0]) {
                  case '/cena':
-      if(message.channel.id == 443788782395981835)
+      if(message.channel.id == 444173672903868431)
           if (args[1] == 'walton' ) {
           message.channel.send('✅ Cena **Waltona** to **$'+cennik.cennik.Walton+'**');
           } else if (args[1] == 'waltonc') {
