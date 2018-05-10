@@ -7,10 +7,12 @@ const cennik = require("./cennik.js");
 var welcomemsg = "Zmien wiadomosc here";
 
 client.on('ready', () => {
-    console.log(' ZŁOM BUILD 0.6.2 ')
+    console.log(' ZŁOM BUILD 0.6.3 ')
     client.user.setUsername("Stanisław");
     client.user.setStatus('dnd');
-    client.user.setActivity('się mądrych ludzi', {type: 'LISTENING'});
+    client.user.setAvatar('https://i.imgur.com/0KJfEZy.png');
+    client.user.setActivity('się mądrych ludzi', {type: 'LISTENING'})
+	;
 });
 
 client.on('guildMemberAdd', member => {
