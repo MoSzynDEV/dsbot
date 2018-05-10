@@ -63,7 +63,7 @@ client.on('message', async message => {
 				} else { message.channel.send('Nie masz uprawnień');}
 				break;
                 
-			case '/rozumiem':
+			case '/itaknikttegokurwanieuzyje':
 				if (message.channel.id == 443778350704492557) {
 				accept.acccept(message, client);
 				}
