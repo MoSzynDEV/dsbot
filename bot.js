@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const prefix = "/";
 const accept = require('./accept.js')
-const cennik = require("./cennik.js");
+const cennik = require('./cennik.js');
 
 var welcomemsg = "Zmien wiadomosc here";
 
