@@ -7,7 +7,7 @@ const cennik = require('./cennik.js');
 var welcomemsg = "Witaj w The Junkyard (Złomowisko)! Aby wyświetlić powitalną (która jest obowiązkowa) wejdź na kanał tekstowy #informacyjna. Po przeczytaniu wpisz /rejestruj IMIĘ NAZWISKO - wpisz te z gry IC, nie rób sobie jaj i nie trać czasu pisząc przykładowo /nickname twoja stara, bo za to będą nagrody. W razie zmiany nickname'u zgłoś się do herszta/kapitana.";
 
 client.on('ready', () => {
-    console.log(' ZŁOM BUILD 0.6.4 ')
+    console.log(' ZŁOM BUILD 0.6.5 ')
     client.user.setUsername("Stanisław");
     client.user.setStatus('dnd');
     client.user.setAvatar('https://i.imgur.com/0KJfEZy.png');
@@ -47,13 +47,15 @@ client.on('message', async message => {
 			
       case '/nickname':
           if (args[1] !== 'undefined' ) {
+	    message.member.addRole('328513641970139136', 'Zarejestrowano');
+	    message.member.removeRole('443778477787840513', 'Zarejestrowano');
             console.log(message.author.username + args[0] + " " + args[1] + " " + args[2])
             message.member.setNickname(message.author.username + ' ' + '(' + args[1] + ' ' + args[2] + ')')
             .then(console.log)
             .catch(console.error);
             break;
           }
-			
+				
         case '/purge':
 			if (message.author.id == 186838922595270657 || message.author.id == 182538255550513153 || message.author.id == 140399385241452544 || message.author.id == 229018558875566080) {
 				let messagecount = parseInt(args[1]);
