@@ -17,8 +17,8 @@ client.on('ready', () => {
 
 client.on('guildMemberAdd', member => {
 
-	member.addRole('443778477787840513')
-	member.guild.channels.get('443778350704492557').send(`${member}` + ", " + welcomemsg); 
+	member.addRole('329267485041754112')
+	member.guild.channels.get('329266779069349888').send(`${member}` + ", " + welcomemsg); 
 
 });
 
@@ -48,7 +48,7 @@ client.on('message', async message => {
       case '/nickname':
           if (args[1] !== 'undefined' ) {
 	    message.member.addRole('328513641970139136', 'Zarejestrowano');
-	    message.member.removeRole('443778477787840513', 'Zarejestrowano');
+	    message.member.removeRole('329267485041754112', 'Zarejestrowano');
             console.log(message.author.username + args[0] + " " + args[1] + " " + args[2])
             message.member.setNickname(message.author.username + ' ' + '(' + args[1] + ' ' + args[2] + ')')
             .then(console.log)
