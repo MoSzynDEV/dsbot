@@ -56,7 +56,7 @@ client.on('message', async message => {
             break;
           }
 				
-        case '/chujkurwausun':
+        case '/chujkurwalatajacepierogi':
 			if (message.author.id == 186838922595270657 || message.author.id == 182538255550513153 || message.author.id == 140399385241452544 || message.author.id == 229018558875566080) {
 				let messagecount = parseInt(args[1]);
 				  message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
