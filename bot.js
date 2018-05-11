@@ -7,7 +7,7 @@ const cennik = require('./cennik.js');
 var welcomemsg = "Witaj w The Junkyard (Złomowisko)! Aby wyświetlić powitalną (która jest obowiązkowa) wejdź na kanał tekstowy #informacyjna. Po przeczytaniu wpisz /rejestruj IMIĘ NAZWISKO - wpisz te z gry IC, nie rób sobie jaj i nie trać czasu pisząc przykładowo /nickname twoja stara, bo za to będą nagrody. W razie zmiany nickname'u zgłoś się do herszta/kapitana.";
 
 client.on('ready', () => {
-    console.log(' ZŁOM BUILD 0.6.6 ')
+    console.log(' ZŁOM BUILD 0.6.7 ')
     client.user.setUsername("Stanisław");
     client.user.setStatus('dnd');
     client.user.setAvatar('https://i.imgur.com/0KJfEZy.png');
