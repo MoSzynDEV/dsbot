@@ -4,7 +4,7 @@ const prefix = "/";
 const accept = require('./accept.js')
 const cennik = require('./cennik.js');
 
-var welcomemsg = "Witaj w The Junkyard (Złomowisko)! Aby wyświetlić powitalną (która jest obowiązkowa) wejdź na kanał tekstowy #informacyjna. Po przeczytaniu wpisz /rejestruj IMIĘ NAZWISKO - wpisz te z gry IC, nie rób sobie jaj i nie trać czasu pisząc przykładowo /nickname twoja stara, bo za to będą nagrody. W razie zmiany nickname'u zgłoś się do herszta/kapitana.";
+var welcomemsg = "Witaj w The Junkyard (Złomowisko)! Aby wyświetlić powitalną (która jest obowiązkowa) wejdź na kanał tekstowy #informacyjna. Po przeczytaniu wpisz /nickname IMIĘ NAZWISKO - wpisz te z gry IC, nie rób sobie jaj i nie trać czasu pisząc przykładowo /nickname twoja stara, bo za to będą nagrody. W razie zmiany nickname'u zgłoś się do herszta/kapitana.";
 
 client.on('ready', () => {
     console.log(' ZŁOM BUILD 0.6.7 ')
