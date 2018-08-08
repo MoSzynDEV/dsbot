@@ -11,7 +11,7 @@ client.on('ready', () => {
     client.user.setUsername("Stanisław");
     client.user.setStatus('dnd');
     client.user.setAvatar('https://i.imgur.com/0KJfEZy.png');
-    client.user.setActivity('się mądrych ludzi', {type: 'LISTENING'})
+    client.user.setActivity('głosu ludu', {type: 'LISTENING'})
 	;
 });
 
