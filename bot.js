@@ -22,9 +22,10 @@ client.on('guildMemberAdd', member => {
 
 });
 
+client.on('message', async message => {
 if(msg.content == "COUNRTY ROADS") {
 msg.channel.send("TAKE ME HOME")
-}
+}});
 
 client.on('message', async message => {
 
