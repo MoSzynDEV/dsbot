@@ -22,6 +22,10 @@ client.on('guildMemberAdd', member => {
 
 });
 
+if(message.content == "COUNTY ROADS") {
+message.channel.send("TAKE ME HOME")
+}
+
 client.on('message', async message => {
 
         let args = message.content.split(/ +/);
