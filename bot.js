@@ -22,7 +22,7 @@ client.on('guildMemberAdd', member => {
 
 });
 
-if(message.content == "COUNTY ROADS") {
+if(message.content == "COUNRTY ROADS") {
 message.channel.send("TAKE ME HOME")
 }
 
