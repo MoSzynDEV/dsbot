@@ -23,7 +23,7 @@ client.on('guildMemberAdd', member => {
 });
 
 client.on('message', async message => {
-if(message.content == "COUNRTY ROADS") {
+if(message.content == "COUNTRY ROADS") {
 message.channel.send("TAKE ME HOME")
 	
 }});
