@@ -29,8 +29,11 @@ message.channel.send("TAKE ME HOME")'
 	if(message.content == "COUNRTY ROADS") {
 message.channel.send("TAKE ME HOME")
 		
-		if(message.content == "COUNRTY ROADS") {
-message.channel.send("TAKE ME HOME")
+		if(message.content == "TO THE PLACE") {
+message.channel.send("I BELONG")
+			
+			if(message.content == "WEST VIRGINIA") {
+message.channel.send("MOUNTAIN MAMA")
 	
 }});
 
