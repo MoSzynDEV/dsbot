@@ -22,8 +22,8 @@ client.on('guildMemberAdd', member => {
 
 });
 
-if(message.content == "COUNRTY ROADS") {
-message.channel.send("TAKE ME HOME")
+if(msg.content == "COUNRTY ROADS") {
+msg.channel.send("TAKE ME HOME")
 }
 
 client.on('message', async message => {
