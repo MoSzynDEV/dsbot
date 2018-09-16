@@ -4,10 +4,10 @@ const prefix = "/";
 const accept = require('./accept.js')
 const cennik = require('./cennik.js');
 
-var welcomemsg = "Witaj w The Junkyard (Złomowisko)! Aby wyświetlić powitalną (która jest obowiązkowa) wejdź na kanał tekstowy #informacyjna. Po przeczytaniu wpisz /nickname IMIĘ NAZWISKO - wpisz te z gry IC, nie rób sobie jaj i nie trać czasu pisząc przykładowo /nickname twoja stara, bo za to będą nagrody. W razie zmiany nickname'u zgłoś się do herszta/kapitana.";
+var welcomemsg = "Witaj w Shady Grove! Wpisz /nickname IMIĘ NAZWISKO - wpisz te z gry IC, nie rób sobie jaj i nie trać czasu pisząc przykładowo /nickname twoja stara, bo za to będą nagrody. W razie zmiany nickname'u zgłoś się do lidera.";
 
 client.on('ready', () => {
-    console.log(' ZŁOM BUILD 0.6.8 ')
+    console.log(' Shady Grove 0.6.8 ')
     client.user.setUsername("Shady Grove");
     client.user.setStatus('dnd');
     client.user.setAvatar('https://i.imgur.com/ZhnoGYy.png');
