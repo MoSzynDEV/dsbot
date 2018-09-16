@@ -18,7 +18,7 @@ client.on('ready', () => {
 client.on('guildMemberAdd', member => {
 
 	member.addRole('490793921694269440')
-	member.guild.channels.get('478963246527676429').send(`${member}` + ", " + welcomemsg); 
+	member.guild.channels.get('490798051221569537').send(`${member}` + ", " + welcomemsg); 
 
 });
 
