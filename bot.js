@@ -23,8 +23,8 @@ client.on('guildMemberAdd', member => {
 });
 
 client.on('message', async message => {
-if(message.content == "COUNTRY ROADS") {
-message.channel.send("TAKE ME HOME")
+if(message.content == "/skinpack") {
+message.channel.send("SOON")
 	
 }});
 client.on('message', async message => {
