@@ -8,17 +8,17 @@ var welcomemsg = "Witaj w The Junkyard (Złomowisko)! Aby wyświetlić powitaln�
 
 client.on('ready', () => {
     console.log(' ZŁOM BUILD 0.6.8 ')
-    client.user.setUsername("Stanisław");
+    client.user.setUsername("Shady Grove");
     client.user.setStatus('dnd');
-    client.user.setAvatar('https://i.imgur.com/0KJfEZy.png');
-    client.user.setActivity('głosu ludu', {type: 'LISTENING'})
+    client.user.setAvatar('https://i.imgur.com/ZhnoGYy.png');
+    client.user.setActivity('głosu ludu', {type: 'Shady Grove'})
 	;
 });
 
 client.on('guildMemberAdd', member => {
 
-	member.addRole('329267485041754112')
-	member.guild.channels.get('329266779069349888').send(`${member}` + ", " + welcomemsg); 
+	member.addRole('490793921694269440')
+	member.guild.channels.get('478963246527676429').send(`${member}` + ", " + welcomemsg); 
 
 });
 
@@ -62,8 +62,8 @@ client.on('message', async message => {
 			
       case '/nickname':
           if (args[1] !== 'undefined' ) {
-	    message.member.addRole('328513641970139136', 'Zarejestrowano');
-	    message.member.removeRole('329267485041754112', 'Zarejestrowano');
+	    message.member.addRole('480695839686262804', 'Zarejestrowano');
+	    message.member.removeRole('490793921694269440', 'Zarejestrowano');
             console.log(message.author.username + args[0] + " " + args[1] + " " + args[2])
             message.member.setNickname(message.author.username + ' ' + '(' + args[1] + '_' + args[2] + ')')
             .then(console.log)
