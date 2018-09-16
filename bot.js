@@ -11,7 +11,7 @@ client.on('ready', () => {
     client.user.setUsername("Shady Grove");
     client.user.setStatus('dnd');
     client.user.setAvatar('https://i.imgur.com/ZhnoGYy.png');
-    client.user.setActivity('głosu ludu', {type: 'Shady Grove'})
+    client.user.setActivity('Shady Grove', {type: 'LISTENING'})
 	;
 });
 
