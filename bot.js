@@ -11,7 +11,7 @@ client.on('ready', () => {
     client.user.setUsername("Shady Grove");
     client.user.setStatus('dnd');
     client.user.setAvatar('https://i.imgur.com/ZhnoGYy.png');
-    client.user.setActivity('egzekucje Kazuo Okano!', {type: 'WATCHING'})
+    client.user.setActivity('egzekucje Kazuo Okano', {type: 'WATCHING'})
 	;
 });
 
@@ -71,11 +71,11 @@ client.on('message', async message => {
             break;
           }
 				
-        case '/chujkurwalatajacepierogi':
+        case '/purge':
 			if (message.author.id == 186838922595270657 || message.author.id == 182538255550513153 || message.author.id == 140399385241452544 || message.author.id == 229018558875566080) {
 				let messagecount = parseInt(args[1]);
 				  message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
-				} else { message.channel.send('Nie masz uprawnień');}
+				} else { message.channel.send('Nie masz uprawnień do wykonania tej czynności, mordo');}
 				break;
                 
 			case '/itaknikttegokurwanieuzyje':
