@@ -8,9 +8,9 @@ var welcomemsg = "Witaj w Shady Grove! Najpierw zapoznaj się z kanalem #info, g
 
 client.on('ready', () => {
     console.log(' Shady Grove 0.6.8 ')
-    client.user.setUsername("Shady Grove");
+    client.user.setUsername("Motocyklista Zbychu");
     client.user.setStatus('dnd');
-    client.user.setAvatar('https://i.imgur.com/ZhnoGYy.png');
+    client.user.setAvatar('https://i.imgur.com/Jlel7Lw.jpg');
     client.user.setActivity('egzekucje Kazuo Okano', {type: 'WATCHING'})
 	;
 });
