@@ -11,7 +11,7 @@ client.on('ready', () => {
     client.user.setUsername("Shady Grove");
     client.user.setStatus('dnd');
     client.user.setAvatar('https://i.imgur.com/ZhnoGYy.png');
-    client.user.setActivity('egzekucje Kazuo Okano', {type: 'LISTENING'})
+    client.user.setActivity('egzekucje Kazuo Okano!', {type: 'WATCHING'})
 	;
 });
 
