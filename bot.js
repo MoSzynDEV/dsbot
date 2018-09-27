@@ -61,7 +61,7 @@ client.on('message', async message => {
       break;
 			
       case '/nickname':
-          if (args[1] !== 'undefined' ) {
+          if (args[1] !== 'undefined' || message.channel.id == 490798051221569537) {
 	    message.member.addRole('480695839686262804', 'Zarejestrowano');
 	    message.member.removeRole('490793921694269440', 'Zarejestrowano');
             console.log(message.author.username + args[0] + " " + args[1] + " " + args[2])
@@ -72,10 +72,10 @@ client.on('message', async message => {
           }
 				
         case '/purge':
-			if (message.author.id == 186838922595270657 || message.author.id == 182538255550513153 || message.author.id == 140399385241452544 || message.author.id == 229018558875566080) {
+			if (message.author.id == 186838922595270657 || message.author.id == 353528803294969857 || message.author.id == 140399385241452544 || message.author.id == 229018558875566080) {
 				let messagecount = parseInt(args[1]);
 				  message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
-				} else { message.channel.send('Nie masz uprawnień do wykonania tej czynności, mordo');}
+				} else { message.channel.send('Nie masz uprawnień do wykonania tej czynności.');}
 				break;
                 
 			case '/itaknikttegokurwanieuzyje':
