@@ -24,7 +24,7 @@ client.on('guildMemberAdd', member => {
 
 client.on('message', async message => {
 if(message.content == "/skinpack") {
-message.channel.send("SOON")
+message.channel.send("DOWNLOAD: http://www.mediafire.com/file/1o0m7xp3xlf0r9o/Shady_Grove.rar/file")
 	
 }});
 client.on('message', async message => {
