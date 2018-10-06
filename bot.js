@@ -59,7 +59,23 @@ client.on('message', async message => {
           message.channel.send('✅ Cena **amfy** to **$'+cennik.cennik.amfa+'**');
           } else { message.channel.send('❎ Nie znaleziono pojazdu spełniającego kryteria!'); }
       break;
-			
+	case '/mute':
+		if (message.author.id == '478966427819180062') {
+			var mutedUser = args[1];
+			mutedUser.addRole('484061924166991878');
+		} else {
+			message.reply('Nie posiadasz uprawnień!');
+		}
+	break;
+	case '/unmute':
+		if (message.author.id == '478966427819180062') {
+			var mutedUser = args[1];
+			mutedUser.removeRole('484061924166991878');
+		} else {
+			message.reply('Nie posiadasz uprawnień!');
+		}
+	break;
+		
       case '/nickname':
           if (args[1] !== 'undefined' || message.channel.id == 490798051221569537) {
 	    message.member.addRole('480695839686262804', 'Zarejestrowano');
