@@ -61,18 +61,14 @@ client.on('message', async message => {
       break;
 	case '/mute':
 		if (message.member.roles.has("478966427819180062")) {
-			var mutedUser = args[1];
+			let mutedUser = message.mentions.members.first();
 			mutedUser.addRole('484061924166991878');
-		} else {
-			message.reply('Nie posiadasz uprawnień!');
 		}
 	break;
 	case '/unmute':
 		if (message.member.roles.has("478966427819180062")) {
-			var mutedUser = args[1];
+			let mutedUser = message.mentions.members.first();
 			mutedUser.removeRole('484061924166991878');
-		} else {
-			message.reply('Nie posiadasz uprawnień!');
 		}
 	break;
 		
