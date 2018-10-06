@@ -60,7 +60,7 @@ client.on('message', async message => {
           } else { message.channel.send('❎ Nie znaleziono pojazdu spełniającego kryteria!'); }
       break;
 	case '/mute':
-		if (message.member.roles.find("id", "478966427819180062")) {
+		if (message.member.roles.has("478966427819180062")) {
 			var mutedUser = args[1];
 			mutedUser.addRole('484061924166991878');
 		} else {
@@ -68,7 +68,7 @@ client.on('message', async message => {
 		}
 	break;
 	case '/unmute':
-		if (message.member.roles.find("id", "478966427819180062")) {
+		if (message.member.roles.has("478966427819180062")) {
 			var mutedUser = args[1];
 			mutedUser.removeRole('484061924166991878');
 		} else {
