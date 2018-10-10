@@ -7,7 +7,7 @@ const cennik = require('./cennik.js');
 var welcomemsg = "Witaj w Shady Grove! Najpierw zapoznaj się z kanalem #info, gdy już to zrobisz wpisz /nickname IMIĘ NAZWISKO - wpisz te z gry IC, nie rób sobie jaj i nie trać czasu pisząc przykładowo /nickname twoja stara, bo za to będą nagrody. W razie zmiany nickname'u zgłoś się do lidera.";
 
 client.on('ready', () => {
-    console.log(' Shady Grove 0.6.8 ')
+    console.log(' Shady Grove 0.6.9 ')
     client.user.setUsername("Motocyklista Zbychu");
     client.user.setStatus('dnd');
     client.user.setAvatar('https://i.imgur.com/Jlel7Lw.jpg');
