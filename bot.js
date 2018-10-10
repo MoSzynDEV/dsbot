@@ -68,7 +68,7 @@ client.on('message', async message => {
 	case '/hunt':
 		if (message.member.roles.has("478966427819180062")) {
 			let mutedUser = message.mentions.members.first();
-			mutedUser.addRole('479199476892958732 || 499609522663456790');
+			mutedUser.addRole('479199476892958732 & 499609522663456790');
 		}
 	break;		
 	case '/unmute':
