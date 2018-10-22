@@ -11,7 +11,7 @@ client.on('ready', () => {
     client.user.setUsername("Motocyklista Zbychu");
     client.user.setStatus('dnd');
     client.user.setAvatar('https://i.imgur.com/Jlel7Lw.jpg');
-    client.user.setActivity('wojne o gnaty', {type: 'WATCHING'})
+    client.user.setActivity('rozpierdalanie ruskich', {type: 'WATCHING'})
 	;
 });
 
